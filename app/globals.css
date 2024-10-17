@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.typed-name {
+    width: 0; /* Start with hidden text */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 0.7s steps(7) forwards; /* Faster typing animation, no cursor */
+  }
+  
+  /* Keyframes for the typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 7ch; /* The length of "Takunda" (7 characters) */
+    }
+  }
+  
+  /* Movement to top-left corner after typing */
+  .move-to-top-left {
+    transform: translate(-45vw, -47vh) scale(0.6); /* Moves and scales the name */
+    transition: transform 0.3s ease-in; 
+  }
