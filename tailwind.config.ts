@@ -11,7 +11,13 @@ const config: Config = {
     extend: {
       backgroundImage: {
         pattern: "url('../public/images/Herobanner.svg')",
+        footer: "url('../public/images/footer.png')",
       },
+      colors:{
+        darkblue:'#041D31',
+        lightblue:'#06636A',
+        light:'#193140',
+      }
     },
   },
   plugins: [],
